@@ -1,0 +1,18 @@
+<table class="table-bordered table-striped col-12">
+  <thead>
+    <tr>
+      <th *ngFor="let title of titles">{{ title }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let event of eventList">
+      <td>{{ event.name }}</td>
+      <td>{{ event.date }}</td>
+      <td>{{ event.time }}</td>
+      <td>
+        {{ event.location.city }}, {{ event.location.address }},
+        {{ event.location.country }}
+      </td>
+    </tr>
+  </tbody>
+</table>
